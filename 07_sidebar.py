@@ -25,11 +25,10 @@ st.sidebar.write("You selected: ", user_opt)
 # 메인 화면
 st.title("Streamlit Sidebar")
 
-folder = "data/"
 image_files = ["Vermeer.png", "Gogh.png", "Munch.png", "ShinYoonbok.png"]
 
 
 i = sel_opt.index(user_opt)
-img_path = folder + image_files[i]
+img_path = image_files[i]
 img = Image.open(img_path)
 st.image(img, caption=user_opt)
