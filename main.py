@@ -1,6 +1,11 @@
 import streamlit as st
 from PIL import Image
 import exchange_rate
+import pandas as pd
+import streamlit as st
+import matplotlib.pyplot as plt
+import matplotlib
+from io import BytesIO
 
 # 사이드바 화면
 st.sidebar.header("로그인")
